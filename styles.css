@@ -299,13 +299,13 @@ section img {
   }
 }
 
-body {
+/* body {
   background: linear-gradient(90deg, #eacbf3, #ebd5f1);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-} 
+}  */
 section  h1 {
   text-align: center;
   font-size: 6.5em;
@@ -380,4 +380,79 @@ section  h4 {
   justify-content: center;
   min-height: 100vh; /* Toma todo el alto de la pantalla */
   padding: 20px;
-} 
+background: linear-gradient(90deg, #eacbf3, #ebd5f1);
+  /* background-color: #ffeef2; Cambia el color a tu gusto */
+  /* padding: 60px 20px; */
+  /* text-align: center; */
+  ;
+
+}
+
+/* #inicio2 {
+  background: linear-gradient(to right, #fcfbfa, #fcfbfa);
+  padding: 60px 20px;
+} */
+#inicio2 h2 {
+  text-align: center;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+  color:#f5288f;
+   max-width: 800px;
+   margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+}
+#inicio2 h3 {
+  text-align: center;
+  align-items: center; 
+  font-size: 1.5em;     
+  color: #504f4f;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+#inicio h3 {
+  text-align: center;
+  align-items: center; 
+  font-size: 1.5em;     
+  color: #4e4e4e;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+#paneles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.panel {
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Panel 1 */
+.panel-uno {
+  background: linear-gradient(135deg, #f5288f, #fd9aaf);
+}
+
+/* Panel 2 */
+.panel-dos {
+  background: linear-gradient(135deg, #8e44ad, #b98de1);
+}
+
+/* Panel 3 */
+.panel-tres {
+  background: linear-gradient(135deg, #0a78df, #9faef1);
+}
