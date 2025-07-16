@@ -159,11 +159,10 @@ nav li a {
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
-  top 0;
-  left: 0;
-  right: 0;
+  margin-top:  10px;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -203,10 +202,10 @@ section img {
   margin: 10px auto;
 }
 
- .seccion-ancha {
+ /* .seccion-ancha {
   margin: 0 auto;     /* Centra la sección */
   padding: 40px 20px;
-}
+} */
  #galeria img {
   width: 500px;
   height: auto;
@@ -374,12 +373,18 @@ section  h4 {
 }
 
 #inicio {
+  min-height: 100vh; /* Toma todo el alto de la pantalla */
+  height: 200px; /* puedes ajustar el valor */
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; /* Toma todo el alto de la pantalla */
-  padding: 20px;
+  justify-content: center; /* centra el contenido verticalmente */
+  align-items: center;     /* centra el contenido horizontalmente */
+  text-align: center;
+ padding: 40px 20px;
+  min-height: 600px; /* asegura algo de espacio pero se adapta */
+
+
 background: linear-gradient(90deg, #eacbf3, #ebd5f1);
   /* background-color: #ffeef2; Cambia el color a tu gusto */
   /* padding: 60px 20px; */
@@ -435,10 +440,12 @@ background: linear-gradient(90deg, #eacbf3, #ebd5f1);
   flex: 1;
   padding: 30px;
   border-radius: 10px;
-  color: white;
+  color: rgb(235, 221, 221);
+  align-items: center;  
   text-align: center;
+  justify-items: center;
   font-family: sans-serif;
-  
+  font-weight: bold;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -446,6 +453,7 @@ background: linear-gradient(90deg, #eacbf3, #ebd5f1);
 .panel-uno {
   background: linear-gradient(135deg, #f5288f, #fd9aaf);
 }
+
 
 /* Panel 2 */
 .panel-dos {
@@ -456,3 +464,50 @@ background: linear-gradient(90deg, #eacbf3, #ebd5f1);
 .panel-tres {
   background: linear-gradient(135deg, #0a78df, #9faef1);
 }
+
+
+
+
+h1 {
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+👉 Esto no rompe tus estilos actuales, solo ajusta el tamaño del texto de forma inteligente según el ancho de pantalla.
+
+✅ ¿Y si usas más elementos como h2, h3…?
+Puedes aplicar lo mismo:
+
+css
+Copiar
+Editar
+h2 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+Si me das el nombre del archivo donde estás poniendo tus estilos, te indico exactamente dónde colocarlo.
+
+
+
+
+
+
+
+
+
+Explor
